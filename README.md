@@ -24,3 +24,6 @@ The dataset used in this work is retrieved from the First Billion Years [FiBY](h
 ### Code snipppet
 
 We provide a script to reproduce the Figures 7-9 from our paper [here](https://github.com/COINtoolbox/Hurdle_fEsc/blob/master/script/hurdle_beta_binomial_gam_fesc.R). The script reads the data, perform the statistical analysis and display the results. 
+
+## References
+
