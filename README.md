@@ -20,3 +20,6 @@ In order to install R go to [R Project](https://www.r-project.org):
     - ggplot2
 
 
+### Code snipppet to reproduce the results from the paper
+
+We provide a script to reproduce the Figures 7-9 from our paper here [script](https://github.com/COINtoolbox/Hurdle_fEsc/blob/master/script/hurdle_beta_binomial_gam_fesc.R) to read the data, perform the statistical analysis and display the results. 
