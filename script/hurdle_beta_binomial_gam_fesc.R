@@ -22,11 +22,13 @@ p         = length(var.names) # Number of covariates
 #### 1) Model Prob(f_esc>0) through Bionmial_GAM with logistic link 
 ## Binomial_GAM
 
-Binomial_GAM         <- gam(non.zero.f_esc ~ s(Mstar,bs="cr",k=12) +  s(Mvir,bs="cr",k=12)  +  s(ssfr_stars,bs="cr",k=12) +
-                              s(baryon_fraction,bs="cr",k=25) +
-                              s(spin,bs="cr")  +  s(QHI,bs="cr",k=25)   +  s(C,bs="cr",k=20),                    
-                            data=Data,family= binomial(link="logit"),method="REML") 
 
+Binomial_GAM  <- gam(non.zero.f_esc ~ s(Mstar,bs="cr",k=12) +  s(Mvir,bs="cr",k=12)  +  
+                                      s(ssfr_stars,bs="cr",k=12) + s(baryon_fraction,bs="cr",k=25) +  
+                                      s(spin,bs="cr")  +  s(QHI,bs="cr",k=25)  + s(C,bs="cr",k=20),                    
+                                      data=Data,family= binomial(link="logit"),method="REML") 
+                            
+### non.zero.f_esc is a 0/1 variable indicating when f_esc > 0 
 summary(Binomial_GAM) 
 ######################################################################################
 ##    
